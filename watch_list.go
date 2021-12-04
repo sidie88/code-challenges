@@ -57,7 +57,7 @@ func (w *WatchList) Print() {
 
 }
 
-func main() {
+func test() {
 	Fav := NewList(3)
 	Fav.Add("Avengers")
 	Fav.Add("Titanic")

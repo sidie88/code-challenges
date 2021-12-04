@@ -37,6 +37,6 @@ func GetTopicCount(topic string) int {
 	return strings.Count(responseBody.Parse.Text["*"], topic)
 }
 
-// func main() {
-// 	fmt.Println(getTopicCount("pizza"))
-// }
+func main() {
+	fmt.Println(GetTopicCount("pizza"))
+}
