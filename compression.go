@@ -20,13 +20,13 @@ func compressedString(message string) string {
 	result.WriteByte(prevChar)
 	counter := 1
 
-	for i:=1; i < length; i++ {
+	for i := 1; i < length; i++ {
 		currentChar := message[i]
 		if prevChar == currentChar {
 			counter++
 			continue
 		} else {
-			if(counter > 1) {
+			if counter > 1 {
 				result.WriteByte(currentChar)
 				result.WriteString(strconv.Itoa(counter))
 			} else {
@@ -35,7 +35,6 @@ func compressedString(message string) string {
 			prevChar = currentChar
 			counter = 1
 		}
-
 
 	}
 

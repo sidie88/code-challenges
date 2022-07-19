@@ -47,7 +47,7 @@ func (w *WatchList) Watch(movie string) {
 
 func (w *WatchList) Print() {
 
-	for i := len(w.movies)-1; i>=0; i-- {
+	for i := len(w.movies) - 1; i >= 0; i-- {
 		if i == 0 {
 			fmt.Printf("%s.\n\n", w.movies[i])
 		} else {
@@ -57,7 +57,7 @@ func (w *WatchList) Print() {
 
 }
 
-func main() {
+func Fav() {
 	Fav := NewList(3)
 	Fav.Add("Avengers")
 	Fav.Add("Titanic")
@@ -83,5 +83,5 @@ func main() {
 	Fav.Print()
 	// Justice League
 	// Titanic
-	// Gundala.	
+	// Gundala.
 }
